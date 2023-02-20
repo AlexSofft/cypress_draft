@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "cy:open:dev": "cypress open --env configFile=development",
+    "cy:open:dev:chrome": "cypress open --browser chrome --env configFile=development",
+    "cy:run:dev": "cypress run --env configFile=development",
+    "cy:open:staging": "cypress open --env configFile=test",
+    "cy:run:staging": "cypress run --env configFile=test",
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^12.6.0"
+  }
+}
