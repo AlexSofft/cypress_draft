@@ -11,13 +11,13 @@ const fetchConfigurationByFile = file => {
 };
 
 module.exports = defineConfig({
-
+  env: {
+    email: 'qasthpark@gmail.com',
+    password: 'MJwilson83',
+  },
   e2e: {
     baseUrl: 'https://www.theguarantors.com/',
-    env: {
-      email: 'qasthpark@gmail.com',
-      password: 'MJwilson83',
-    },
+
     setupNodeEvents(on, config) {
       // const environment = config.env.configFile || 'dev'
       // const configurationForEnvironment = fetchConfigurationByFile(environment);

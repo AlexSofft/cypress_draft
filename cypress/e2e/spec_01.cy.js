@@ -16,7 +16,8 @@ describe('template spec', () => {
       cy.wait('@resume').its('response.statusCode').should('eq', 200);
       
       cy.document().its('cookie').should('contain', '_gat_UA-83295386-2')
-    }).then(() => cy.visit('https://theguarantors.com/application?'))
+    })
+     cy.visit('https://theguarantors.com/application?')
   });
 
 
