@@ -18,5 +18,9 @@ Cypress.Commands.add("login", (email, password) => {
         );
 
         cy.get("h1").should("contain", "React.js Sample Project");
-    });
+    },
+        {
+            cacheAcrossSpecs: true
+        }
+    );
 });
